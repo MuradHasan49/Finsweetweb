@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
       <div className="bg-[#1C1E53]">
-        <nav className="w-[1280px] mx-auto flex justify-between items-center  py-8">
+        <nav className="container mx-auto flex justify-between items-center  py-8">
           <div className="">
             <img src={Logo1} alt="logo" />
           </div>
