@@ -4,7 +4,7 @@ import AddFeedback from "./AddFeedback";
 const Feedback = () => {
   return (
     <>
-      <div className="">
+      <div className="bg-[#F4F6FC]">
         <div className="container mx-auto">
           <div className="grid grid-cols-3 gap-28 py-32">
             <div className="col-span-1 ">
