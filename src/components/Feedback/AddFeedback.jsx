@@ -33,12 +33,12 @@ const FeedbackSlider = () => {
 
   const handlePrev = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
+      (prevIndex) => (prevIndex + 1 + slides.length) % slides.length
     );
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    setCurrentIndex((prevIndex) => (prevIndex - 1) % slides.length);
   };
 
   return (
