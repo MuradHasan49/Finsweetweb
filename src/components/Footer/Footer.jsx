@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="container">
           <div className=" flex flex-col items-center gap-10 md:flex md:flex-row md:items-start md:gap-[142px] py-24">
             <div className=" flex flex-col gap-20 ">
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col items-center md:items-start gap-6">
                 <img className="w-[156px] h-[38px]" src={logo} alt="" />
                 <p className="text-[16px] font-medium leading-7 text-white">
                   We are always open to discuss your project and{" "}
@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="">
+            <div className="flex flex-col items-center md:items-start">
               <h1 className="text-5xl leading-16 font-semibold text-white">
                 Lets Talk!
               </h1>
