@@ -4,7 +4,7 @@ const FooterCopy = () => {
   return (
     <>
       <div className="container py-8">
-        <div className="flex flex-col md:flex justify-between items-center">
+        <div className="flex flex-col md:flex flex-row justify-between items-center">
           <div className="">
             <ul className="flex gap-4 md:gap-8 text-[16px] leading-7 text-[#282938]">
               <li className="hover:text-black cursor-pointer">Home</li>
