@@ -10,10 +10,10 @@ const HowWork = () => {
   return (
     <>
     <div className=" bg-[#F4F6FC]">
-      <div className="container">
-        <div className="flex flex-col md:grid grid-cols-2 gap-[142px] py-32">
-          <div className="w-[405px] h-[184px] flex flex-col gap-4 ">
-            <h1 className="text-5xl font-semibold leading-16 text-[#282938] ">
+      <div className="container ">
+        <div className="flex flex-col items-center md:grid grid-cols-2 md:items-start gap-[142px] py-16 md:py-32">
+          <div className="w-[405px] h-[184px] flex flex-col gap-4 items-center md:items-start">
+            <h1 className=" text-5xl font-semibold leading-16 text-[#282938] ">
               How we work
             </h1>
             <p className="text-[#282938]">

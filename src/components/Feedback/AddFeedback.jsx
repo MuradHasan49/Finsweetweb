@@ -52,7 +52,7 @@ const FeedbackSlider = () => {
       >
         {slides.map((slide, index) => (
           <div key={index} className="min-w-full flex flex-col  p-8">
-            <p className="text-3xl font-medium text-[#282938] max-w-2xl">
+            <p className="md:text-3xl font-medium text-[#282938] max-w-2xl">
               {slide.text}
             </p>
 

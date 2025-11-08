@@ -7,12 +7,12 @@ import Card3 from "../../assets/ViewProject/Card3.png";
 const Viewprojects = () => {
   return (
     <>
-      <div className="container mt-28">
-        <div className=" flex flex-col gap-8 md:flex-row justify-between ">
+      <div className="container  md:py-32">
+        <div className=" flex flex-col gap-8 md:flex-row justify-between items-center mb-8 md:mb-16 ">
           <h1 className=" text-5xl font-semibold leading-16 text-[#282938] ">
             View our projects
           </h1>
-          <ArrowBTN className=" !text-[#282938] fill-current hover:!text-black">
+          <ArrowBTN className="mb-5 md:mb-0 !text-[#282938] fill-current hover:!text-black">
             View More
           </ArrowBTN>
         </div>
@@ -62,7 +62,7 @@ const Viewprojects = () => {
             <div className="relative group w-full h-[284px] rounded-[11px] overflow-hidden">
               {/* Background Image */}
               <img
-                className="w-[405px] h-full object-cover rounded-[11px]"
+                className=" w-full md:w-[405px] h-full object-cover rounded-[11px]"
                 src={Card2}
                 alt="Project"
               />
@@ -100,7 +100,7 @@ const Viewprojects = () => {
             <div className="relative group w-full h-[284px] rounded-[11px] overflow-hidden">
               {/* Background Image */}
               <img
-                className=" w-[405px] h-[284px] object-cover rounded-[11px]"
+                className=" w-full md:w-[405px] h-[284px] object-cover rounded-[11px]"
                 src={Card3}
                 alt="Project"
               />
