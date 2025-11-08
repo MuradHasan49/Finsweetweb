@@ -48,7 +48,7 @@ const Footer = () => {
               <div className=" flex gap-9 mt-7">
                 <a
                   href="#"
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-[#1C1E53] hover:scale-110 hover:bg-black hover:text-white transition duration-300"
+                  className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-[#1C1E53]  hover:scale-110 hover:bg-black  hover:text-white transition duration-300"
                 >
                   <FaFacebookF className="text-lg" />
                 </a>
