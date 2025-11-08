@@ -14,8 +14,7 @@ const Banner = () => {
                 Building stellar websites for early startups
               </h1>
               <p className="opacity-70 mt-6 text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
               </p>
               <div className="mt-12">
                 <div className="flex gap-10">
