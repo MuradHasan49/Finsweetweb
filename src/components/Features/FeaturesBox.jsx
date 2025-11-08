@@ -11,7 +11,7 @@ const FeaturesBox = () => {
   return (
     <>
       <div className=" bg-[#F4F6FC]">
-        <div className="container mx-auto py-32">
+        <div className="container  py-32">
           <div className="flex flex-col text-center py-12">
             <h4 className="text-[14px] font-medium leading-7 tex-[#282938] ">
               Features
@@ -21,7 +21,7 @@ const FeaturesBox = () => {
               <span className="block">problems, one product at</span> a time
             </h1>
           </div>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid md:grid-cols-3 gap-8">
             <Box
               icon={iocn}
               h1={"Uses Client First"}

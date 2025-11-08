@@ -6,7 +6,7 @@ const Feedback = () => {
     <>
       <div className="bg-[#F4F6FC]">
         <div className="container mx-auto">
-          <div className="grid grid-cols-3 gap-28 py-32">
+          <div className=" md:grid grid-cols-3 gap-28 py-32">
             <div className="col-span-1 ">
               <h1 className="mb-4 text-[38px] text-[#282938] font-semibold leading-14">
                What our clients say about us

@@ -4,21 +4,21 @@ import BGimg from "../../assets/BannerImg/woman-writing-on-paper-3228878.png";
 const Dbanner = () => {
   return (
     <>
-      <div className="container mx-auto py-32">
-        <div className="grid grid-cols-2 items-center">
+      <div className="container  py-32">
+        <div className="md:grid grid-cols-2 items-center">
           {/* Left side with background image */}
           <div
-            className="w-full h-full bg-cover bg-center rounded-l-lg p-24"
+            className=" w-full h-full bg-cover bg-center rounded-l-lg md:p-24"
             style={{ backgroundImage: `url(${BGimg})` }}
           >
-            <div className="w-[446px] h-[334px]">
-              <h1 className="font-semibold text-[54px] leading-18 text-white">
-                Building stellar websites for early{" "}
-                <span className="block">startups</span>
+            <div className="md:w-[446px] h-[334px]">
+              <h1 className="font-semibold p-3 text-5xl  md:text-[54px] md:leading-18 text-white">
+                Building stellar websites for early
+                <span className="md:block"> startups</span>
               </h1>
-              <p className="text-[16px] mt-6 font-medium leading-7 text-white">
+              <p className=" p-3 md:text-[16px] mt-6 font-medium md:leading-7 text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,{" "}
-                <span className="block">
+                <span className="md:block">
                   sed do eiusmod tempor incididunt ut labore et dolore{" "}
                 </span>{" "}
                 magna aliqua ut enim.
@@ -28,7 +28,7 @@ const Dbanner = () => {
 
           {/* Right side */}
           <div className="bg-[#1C1E53] rounded-r-lg">
-            <div className="w-ful h-full p-24">
+            <div className="p-3 w-ful h-full md:p-24">
               <div className="">
                 <h1 className="font-medium text-[32px] leading-12 text-white ">
                   Send inquiry

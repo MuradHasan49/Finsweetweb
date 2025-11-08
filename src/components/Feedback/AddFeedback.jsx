@@ -12,10 +12,6 @@ const FeedbackSlider = () => {
       img: FeedbackImg,
     },
     {
-      text:'"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."',
-      img: FeedbackImg,
-    },
-    {
       text: '"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."',
       img: FeedbackImg,
     },
@@ -24,7 +20,11 @@ const FeedbackSlider = () => {
       img: FeedbackImg,
     },
     {
-      text:'"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."',
+      text: '"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."',
+      img: FeedbackImg,
+    },
+    {
+      text: '"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."',
       img: FeedbackImg,
     },
   ];
@@ -35,10 +35,12 @@ const FeedbackSlider = () => {
     setCurrentIndex(
       (prevIndex) => (prevIndex + 1 + slides.length) % slides.length
     );
+    console.log(handlePrev);
   };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1) % slides.length);
+    console.log(handleNext);
   };
 
   return (
@@ -49,18 +51,15 @@ const FeedbackSlider = () => {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {slides.map((slide, index) => (
-          <div
-            key={index}
-            className="min-w-full flex flex-col  p-8"
-          >
+          <div key={index} className="min-w-full flex flex-col  p-8">
             <p className="text-3xl font-medium text-[#282938] max-w-2xl">
               {slide.text}
             </p>
 
             <div className="flex justify-between items-center mt-12 gap-6">
-                <div className="">
-              <img src={slide.img} alt={slide.name} className=" shadow-lg" />
-                </div>
+              <div className="mb-10">
+                <img src={slide.img} alt={slide.name} className=" shadow-lg" />
+              </div>
               <div className="flex gap-3">
                 <button
                   onClick={handlePrev}

@@ -7,9 +7,9 @@ const Banner = () => {
   return (
     <>
       <div className="bg-[#1C1E53] py-32">
-        <div className="container mx-auto ">
-          <div className="grid grid-cols-2 gap-15">
-            <div className="w-[582px] h-full">
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid md:grid-cols-2 gap-15">
+            <div className="lg:w-[582px] h-full ">
               <h1 className="text-[54px] font-semibold leading-[74px] text-white">
                 Building stellar websites for early startups
               </h1>

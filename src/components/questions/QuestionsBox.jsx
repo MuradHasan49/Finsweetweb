@@ -31,8 +31,7 @@ const QuestionsBox = ({ h1, p, Number }) => {
 
         <div
           className={`overflow-hidden transition-all duration-500 ${
-            isOpen ? "max-h-40 opacity-100 mt-3" : "max-h-0 opacity-0"
-          }`}
+            isOpen ? "max-h-40 opacity-100 mt-3" : "max-h-0 opacity-0"}`}
         >
           <p className="font-medium text-[18px] text-gray-600">{p}</p>
         </div>

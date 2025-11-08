@@ -1,13 +1,17 @@
 import React from "react";
 import ArrowBTN from "../Banner/ArrowBTN";
 import Box from "./Box";
+import pointer1 from "../../assets/HowWork/pointer1.png"
+import pointer2 from "../../assets/HowWork/pointer2.png"
+import pointer3 from "../../assets/HowWork/pointer3.png"
+import pointer4 from "../../assets/HowWork/pointer4.png"
 
 const HowWork = () => {
   return (
     <>
     <div className=" bg-[#F4F6FC]">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-2 gap[142px] py-32">
+      <div className="container">
+        <div className="flex flex-col md:grid grid-cols-2 gap-[142px] py-32">
           <div className="w-[405px] h-[184px] flex flex-col gap-4 ">
             <h1 className="text-5xl font-semibold leading-16 text-[#282938] ">
               How we work
@@ -18,11 +22,11 @@ const HowWork = () => {
             </p>
             <ArrowBTN className={`!text-[#2405F2] text-[18px] leading-8 font-medium`}>Get in touch with us</ArrowBTN>
           </div>
-          <div className="grid grid-cols-2">
-            <Box h1={"Strategy"} />
-            <Box h1={"Wireframing"} />
-            <Box h1={"Design"} />
-            <Box h1={"Development"} />
+          <div className="flex flex-col  md:grid grid-cols-2">
+            <Box src={pointer1} h1={"Strategy"} />
+            <Box src={pointer2} h1={"Wireframing"} />
+            <Box src={pointer3} h1={"Design"} />
+            <Box src={pointer4} h1={"Development"} />
           </div>
         </div>
       </div>
