@@ -21,7 +21,7 @@ const FeaturesBox = () => {
               <span className="block">problems, one product at</span> a time
             </h1>
           </div>
-          <div className="grid grid-cols-1 md:grid md:grid-cols-3 gap-8">
+          <div className="flex flex-col items-center md:grid md:grid-cols-3 gap-8">
             <Box
               icon={iocn}
               h1={"Uses Client First"}

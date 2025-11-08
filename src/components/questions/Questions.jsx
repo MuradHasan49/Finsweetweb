@@ -4,10 +4,10 @@ import QuestionsBox from "./QuestionsBox";
 const Questions = () => {
   return (
     <div className="container mx-auto py-32">
-      <div className="flex flex-col items-center gap-10 md:grid grid-cols-3 md:gap-8">
-        <div>
-          <h1 className="mb-4 text-[38px] text-[#282938] font-semibold leading-[1.3]">
-            Frequently <span className="block">asked questions</span>
+      <div className="flex flex-col  gap-10 md:grid grid-cols-3 md:gap-8">
+        <div className="flex flex-col items-center md:items-start">
+          <h1 className="mb-4 text-3xl md:text-[38px] text-[#282938] font-semibold ">
+            Frequently <span className="md:block">asked questions</span>
           </h1>
           <p className="text-[18px] text-[#2405F2] font-medium leading-8 cursor-pointer hover:underline">
             Contact us for more info
