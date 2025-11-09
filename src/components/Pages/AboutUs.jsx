@@ -215,7 +215,7 @@ const AboutUs = () => {
 
           <div className=" flex flex-col items-center md:flex md:flex-row justify-between">
             <div className="flex  items-center bg-[#f7f9fc] py-12">
-              <div className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 p-6 w-[280px] text-center group">
+              <div className="w-[296px] h-[344px] relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 p-6  text-center group">
                 {/* Profile Image Wrapper */}
                 <div className="relative mx-auto w-40 h-40 rounded-full overflow-hidden group">
                   <img
@@ -247,15 +247,15 @@ const AboutUs = () => {
                 </div>
 
                 {/* Name & Title */}
-                <h3 className="text-lg font-semibold mt-5 text-gray-800">
+                <h3 className="text-2xl leading-9 font-medium mt-8 text-gray-800">
                   John Smith
                 </h3>
-                <p className="text-gray-500">CEO</p>
+                <p className="text-gray-500 text-[16px] leading-7 mt-4 ">CEO</p>
               </div>
             </div>
 
             <div className="flex  items-center bg-[#f7f9fc] py-12">
-              <div className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 p-6 w-[280px] text-center group">
+              <div className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 p-6 w-[296px] h-[344px] text-center group">
                 {/* Profile Image Wrapper */}
                 <div className="relative mx-auto w-40 h-40 rounded-full overflow-hidden group">
                   <img
@@ -287,15 +287,15 @@ const AboutUs = () => {
                 </div>
 
                 {/* Name & Title */}
-                <h3 className="text-lg font-semibold mt-5 text-gray-800">
+                <h3 className="text-2xl leading-9 font-medium mt-8 text-gray-800">
                   Simon Adams
                 </h3>
-                <p className="text-gray-500">CTO</p>
+                <p className="text-gray-500 text-[16px] leading-7 mt-4 ">CTO</p>
               </div>
             </div>
 
             <div className="flex  items-center bg-[#f7f9fc] py-12">
-              <div className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 p-6 w-[280px] text-center group">
+              <div className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 p-6 w-[296px] h-[344px] text-center group">
                 {/* Profile Image Wrapper */}
                 <div className="relative mx-auto w-40 h-40 rounded-full overflow-hidden group">
                   <img
@@ -327,15 +327,15 @@ const AboutUs = () => {
                 </div>
 
                 {/* Name & Title */}
-                <h3 className="text-lg font-semibold mt-5 text-gray-800">
+                <h3 className="text-2xl leading-9 font-medium mt-8 text-gray-800">
                   Paul Jones
                 </h3>
-                <p className="text-gray-500">Design Lead</p>
+                <p className="text-gray-500 text-[16px] leading-7 mt-4">Design Lead</p>
               </div>
             </div>
 
             <div className="flex  items-center bg-[#f7f9fc] py-12">
-              <div className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 p-6 w-[280px] text-center group">
+              <div className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 p-6 w-[296px] h-[344px] text-center group">
                 {/* Profile Image Wrapper */}
                 <div className="relative mx-auto w-40 h-40 rounded-full overflow-hidden group">
                   <img
@@ -367,10 +367,10 @@ const AboutUs = () => {
                 </div>
 
                 {/* Name & Title */}
-                <h3 className="text-lg font-semibold mt-5 text-gray-800">
+                <h3 className="text-2xl leading-9 font-medium mt-8 text-gray-800">
                   Sara Hardin
                 </h3>
-                <p className="text-gray-500">Project Manager</p>
+                <p className="text-gray-500 text-[16px] leading-7 mt-4">Project Manager</p>
               </div>
             </div>
           </div>
