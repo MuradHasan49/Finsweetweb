@@ -11,7 +11,7 @@ const Pricing = () => {
         <Heading
         Heading={"Our Pricing Plans"}
         />
-        <p className=' md:w-[562px] font-medium tex-[16px] text-[#282938]'>When you’re ready to go beyond prototyping in Figma, Webflow is ready to <span className='md:block'> help you bring your designs to life — without coding them.</span></p>
+        <p className=' md:w-[562px] font-medium text-[16px] text-[#282938]'>When you’re ready to go beyond prototyping in Figma, Webflow is ready to <span className='md:block'> help you bring your designs to life — without coding them.</span></p>
       </div>
 
       <div className="flex flex-col items-center md:items-start gap-10 md:gap-0 md:flex md:flex-row justify-between py-16">

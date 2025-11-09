@@ -9,6 +9,7 @@ import FooterCopy from "./components/Footer/FooterCopy";
 import HowWork from "./components/How_we_work/HowWork";
 import Nav from "./components/Navbar/Navbar";
 import AboutUs from "./components/Pages/AboutUs";
+import ContactUs from "./components/Pages/ContactUs";
 import Pricing from "./components/Pages/Pricing";
 
 import Questions from "./components/questions/Questions";
@@ -31,6 +32,7 @@ function App() {
 
       <AboutUs />
       <Pricing/>
+      <ContactUs/>
     </>
   );
 }
