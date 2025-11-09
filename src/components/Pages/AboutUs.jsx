@@ -176,7 +176,7 @@ const AboutUs = () => {
           <Heading Heading={"The benefits of working "} />
           <Heading Heading={"with us"} />
         </div>
-        <div className="md:flex justify-between py-12">
+        <div className="flex flex-col items-center gap-10 md:gap-0 md:flex justify-between py-12">
           <Box
             className={"bg-blue-100/40"}
             icon={iocn6}
