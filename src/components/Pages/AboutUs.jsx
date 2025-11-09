@@ -261,6 +261,7 @@ const AboutUs = () => {
                   <img
                     src={FooterImg2}
                     alt="/"
+                    
                     className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
                   />
 
