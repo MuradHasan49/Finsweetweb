@@ -4,12 +4,12 @@ import BlogImg from "../../assets/Blog/arabic-businessman-standing-on-street-and
 import BlogImg2 from "../../assets/Blog/woman-in-white-sleeveless-shirt-using-macbook-air-on-brown-wooden-table-3766189.png";
 import BlogImg3 from "../../assets/Blog/apple-monitors-326518.png";
 
-const Blog = () => {
+const Blog = ({className,BlogHeading}) => {
   return (
     <>
       <div className="container">
-        <div className="flex justify-center md:justify-start">
-          <h1 className="font-semibold text-[48px] leading-16  text-[#282938] mb-16">
+          <div className={`flex flex-col items-start ${className}`}>
+          <h1 className={`font-semibold text-[48px] leading-16  text-[#282938] mb-16 ${BlogHeading}`}>
             Blog
           </h1>
         </div>

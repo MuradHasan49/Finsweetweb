@@ -47,7 +47,7 @@ const PricingCard = ({Price,Perdesign,Heding,p,classNam,className}) => {
             <PriceLine
 
             className={`group-hover:text-white group-active:bg-[#1C1E53] group-active:text-white ${className}`}
-            text={"All limited links"}
+            text={"Assist and Help"}
             />
             <div className=" mx-auto py-10">
             <Button className={"bg-black text-white group-hover:bg-amber-300 group-hover:text-black transition-transform duration-300 ease-in-out"}>

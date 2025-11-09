@@ -9,9 +9,11 @@ import FooterCopy from "./components/Footer/FooterCopy";
 import HowWork from "./components/How_we_work/HowWork";
 import Nav from "./components/Navbar/Navbar";
 import AboutUs from "./components/Pages/AboutUs";
+import BlogPage from "./components/Pages/BlogPage";
 import ContactUs from "./components/Pages/ContactUs";
 import Pricing from "./components/Pages/Pricing";
 import PrivacyAndPolicy from "./components/Pages/PrivacyAndPolicy";
+import ReadBlog from "./components/Pages/ReadBlog";
 import Questions from "./components/questions/Questions";
 import Viewprojects from "./components/Viewourprojects/Viewprojects";
 
@@ -34,6 +36,8 @@ function App() {
       <Pricing/>
       <ContactUs/>
       <PrivacyAndPolicy/>
+      <BlogPage/>
+      <ReadBlog/>
     </>
   );
 }
