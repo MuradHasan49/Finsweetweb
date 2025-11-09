@@ -11,7 +11,7 @@ import Nav from "./components/Navbar/Navbar";
 import AboutUs from "./components/Pages/AboutUs";
 import ContactUs from "./components/Pages/ContactUs";
 import Pricing from "./components/Pages/Pricing";
-
+import PrivacyAndPolicy from "./components/Pages/PrivacyAndPolicy";
 import Questions from "./components/questions/Questions";
 import Viewprojects from "./components/Viewourprojects/Viewprojects";
 
@@ -33,6 +33,7 @@ function App() {
       <AboutUs />
       <Pricing/>
       <ContactUs/>
+      <PrivacyAndPolicy/>
     </>
   );
 }
