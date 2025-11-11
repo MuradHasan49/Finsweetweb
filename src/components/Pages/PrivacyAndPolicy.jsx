@@ -4,7 +4,7 @@ import Heading from "../Global/Heading";
 const PrivacyAndPolicy = () => {
   return (
     <>
-      <div className="container">
+      <div className="container py-32">
         <div className="flex flex-col gap-4 items-center">
           <Heading Heading={"Privacy Policy"} />
           <p>
