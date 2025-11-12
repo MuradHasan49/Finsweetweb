@@ -105,7 +105,7 @@ const Navbar = () => {
               <Link to="/FAQ">FAQ</Link>
             </li>
             <li className="hover:text-white cursor-pointer transition-colors duration-300">
-              <Link to="/Blog"> Blog</Link>
+              <Link to="/Blog">Blog</Link>
             </li>
         </ul>
         <div
