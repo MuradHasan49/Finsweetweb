@@ -3,15 +3,6 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
-import Banner from "./components/Banner/Banner";
-import Blog from "./components/Blog/Blog";
-import Dbanner from "./components/DownBanner/Dbanner";
-import FeaturesBox from "./components/Features/FeaturesBox";
-import Feedback from "./components/Feedback/Feedback";
-import Footer from "./components/Footer/Footer";
-import FooterCopy from "./components/Footer/FooterCopy";
-import HowWork from "./components/How_we_work/HowWork";
-import Nav from "./components/Navbar/Navbar";
 import AboutUs from "./components/Pages/AboutUs";
 import BlogPage from "./components/Pages/BlogPage";
 import ContactUs from "./components/Pages/ContactUs";
@@ -20,8 +11,6 @@ import Pricing from "./components/Pages/Pricing";
 import PrivacyAndPolicy from "./components/Pages/PrivacyAndPolicy";
 import ReadBlog from "./components/Pages/ReadBlog";
 import Work from "./components/Pages/Work";
-import Questions from "./components/questions/Questions";
-import Viewprojects from "./components/Viewourprojects/Viewprojects";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout";
@@ -40,6 +29,7 @@ const router = createBrowserRouter([
       { path: "Blog", Component: BlogPage },
       { path: "ReadMore", Component: ReadBlog },
       { path: "ContactUs", Component: ContactUs },
+      { path: "Work", Component: Work },
     ]
   },
   ]);
