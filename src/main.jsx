@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       { path: "AboutUs", Component: AboutUs },
       { path: "Features", Component: Features },
       { path: "Pricing", Component: Pricing },
-      { path: "FAQ", Component: Questions },
+      { path: "FAQ", Component: PrivacyAndPolicy },
       { path: "Pricing", Component: Pricing },
       { path: "Blog", Component: BlogPage },
       { path: "ReadMore", Component: ReadBlog },
