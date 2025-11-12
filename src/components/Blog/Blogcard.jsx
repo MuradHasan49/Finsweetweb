@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 const Blogcard = ({src,Date,Head,p}) => {
   return (
     <>
+
       <div className="w-[405px] h-[610px]">
             <img className='h-[285px]' src={src}alt="" />
             <div className="flex flex-col gap-4">
