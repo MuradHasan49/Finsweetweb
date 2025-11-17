@@ -1,110 +1,73 @@
-import React, { useState, useRef } from "react";
-import FeedbackImg from "../../assets/Feedback/profile.png"; // your image
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const FeedbackSlider = () => {
-  const slides = [
-    {
-      text: '"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."',
-      img: FeedbackImg,
-    },
-    {
-      text: '"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."',
-      img: FeedbackImg,
-    },
-    {
-      text: '"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."',
-      img: FeedbackImg,
-    },
-    {
-      text: '"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."',
-      img: FeedbackImg,
-    },
-    {
-      text: '"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."',
-      img: FeedbackImg,
-    },
-    {
-      text: '"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."',
-      img: FeedbackImg,
-    },
-  ];
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      onClick={onClick}
+      style={{
+        ...style,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "red",
+        width: "40px",
+        height: "40px",
+        borderRadius: "50%",
+        right: "10px",
+        zIndex: 10,
+      }}
+    />
+  );
+}
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const touchStartX = useRef(0);
-  const touchEndX = useRef(0);
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      onClick={onClick}
+      style={{
+        ...style,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "green",
+        width: "40px",
+        height: "40px",
+        borderRadius: "50%",
+        left: "10px",
+        zIndex: 10,
+      }}
+    />
+  );
+}
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1 + slides.length) % slides.length);
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1) % slides.length);
-  };
-
-  // Touch handlers for swipe
-  const handleTouchStart = (e) => {
-    touchStartX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchMove = (e) => {
-    touchEndX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchEnd = () => {
-    const distance = touchStartX.current - touchEndX.current;
-    const swipeThreshold = 50; // minimum distance for swipe
-    if (distance > swipeThreshold) handlePrev(); // swipe left → next
-    if (distance < -swipeThreshold) handleNext(); // swipe right → prev
+function FeedbackSlider() {
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   return (
-    <div
-      className="relative w-full overflow-hidden"
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-    >
-      {/* Slider container */}
-      <div
-        className="flex transition-transform duration-700 ease-in-out"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-      >
-        {slides.map((slide, index) => (
-          <div key={index} className="min-w-full flex flex-col p-8">
-            <p className="md:text-3xl font-medium text-[#282938] max-w-2xl">{slide.text}</p>
-            <div className="flex justify-between items-center mt-12 gap-6">
-              <div className="mb-10">
-                <img src={slide.img} alt={`Slide ${index}`} className="shadow-lg" />
-              </div>
-              <div className="flex gap-3">
-                {/* Left button */}
-                <button onClick={handlePrev} className="transform -translate-y-1/2">
-                  <svg
-                    className="w-10 h-10 bg-blue-500 text-white fill-current rounded-full transition-transform duration-300 ease-in-out hover:scale-110"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 640 640"
-                  >
-                    <path d="M112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320zM576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320zM188.7 308.7C182.5 314.9 182.5 325.1 188.7 331.3L292.7 435.3C297.3 439.9 304.2 441.2 310.1 438.8C316 436.4 320 430.5 320 424L320 352L424 352C437.3 352 448 341.3 448 328L448 312C448 298.7 437.3 288 424 288L320 288L320 216C320 209.5 316.1 203.7 310.1 201.2C304.1 198.7 297.2 200.1 292.7 204.7L188.7 308.7z" />
-                  </svg>
-                </button>
-
-                {/* Right button */}
-                <button onClick={handleNext} className="transform -translate-y-1/2">
-                  <svg
-                    className="w-10 h-10 bg-blue-500 text-white fill-current rounded-full transition-transform duration-300 ease-in-out hover:scale-110"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 640 640"
-                  >
-                    <path d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320zM451.3 331.3C457.5 325.1 457.5 314.9 451.3 308.7L347.3 204.7C342.7 200.1 335.8 198.8 329.9 201.2C324 203.6 320 209.5 320 216L320 288L216 288C202.7 288 192 298.7 192 312L192 328C192 341.3 202.7 352 216 352L320 352L320 424C320 430.5 323.9 436.3 329.9 438.8C335.9 441.3 342.8 439.9 347.3 435.3L451.3 331.3z" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+    <div className="slider-container w-96 mx-auto mt-10">
+      <Slider {...settings}>
+        <div><h3 className="text-center">11111111 <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></h3></div>
+        <div><h3 className="text-center">11111111 <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></h3></div>
+        <div><h3 className="text-center">11111111 <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></h3></div>
+        <div><h3 className="text-center">11111111 <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></h3></div>
+        <div><h3 className="text-center">11111111 <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></h3></div>
+      </Slider>
     </div>
   );
-};
+}
 
 export default FeedbackSlider;
