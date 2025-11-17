@@ -60,11 +60,11 @@ function FeedbackSlider() {
   return (
     <div className="slider-container w-96 mx-auto mt-10">
       <Slider {...settings}>
-        <div><h3 className="text-center">11111111 <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></h3></div>
-        <div><h3 className="text-center">11111111 <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></h3></div>
-        <div><h3 className="text-center">11111111 <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></h3></div>
-        <div><h3 className="text-center">11111111 <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></h3></div>
-        <div><h3 className="text-center">11111111 <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></h3></div>
+     <div className="">
+      <h1>"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."</h1>
+
+      <img src="" alt="" />
+     </div>
       </Slider>
     </div>
   );
