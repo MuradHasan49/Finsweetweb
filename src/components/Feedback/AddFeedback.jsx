@@ -10,9 +10,9 @@ function SampleNextArrow({ onClick }) {
   return (
     <div
       onClick={onClick}
-      className="absolute top-[200px] right-20 flex justify-center items-center bg-gray-500 w-10 h-10 rounded-full z-10 cursor-pointer hover:bg-gray-700"
+      className="absolute top-[200px] right-20 flex justify-center items-center w-10 h-10 rounded-full z-10 cursor-pointer hover:bg-[#5239FA] group"
     >
-      <span className="text-white text-xl font-bold"><IoIosArrowForward /></span>
+      <span className="text-white text-xl font-bold"><IoIosArrowForward className="text-black group-hover:text-white" /></span>
     </div>
   );
 }
@@ -21,9 +21,9 @@ function SamplePrevArrow({ onClick }) {
   return (
     <div
       onClick={onClick}
-      className="absolute top-[200px] left-[610px] flex justify-center items-center bg-gray-500 w-10 h-10 rounded-full z-10 cursor-pointer hover:bg-gray-700"
+      className="absolute top-[200px] left-[610px] flex justify-center items-center w-10 h-10 rounded-full z-10 cursor-pointer hover:bg-[#5239FA] group"
     >
-      <span className="text-white text-xl font-bold"><IoIosArrowBack /></span>
+      <span className="text-white text-xl font-bold"><IoIosArrowBack className="text-black group-hover:text-white" /></span>
     </div>
   );
 }
