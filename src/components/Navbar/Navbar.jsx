@@ -38,7 +38,7 @@ const Navbar = () => {
               <Link to="/Blog"> Blog</Link>
             </li>
           </ul>
-          <Link to="/ContactUS"><Button>Contact us</Button></Link>
+          <Link to="/Connect"><Button>Contact us</Button></Link>
         </div>
 
         {/* Mobile Hamburger */}
